@@ -1,8 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/api/(.*)",
-      "destination": "/api"
+      "source": "/spotify-ms/(.*)",
+      "destination": "https://54.253.2.130/spotify-ms/$1"
     }
   ]
 }
