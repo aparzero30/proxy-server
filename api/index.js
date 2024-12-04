@@ -9,6 +9,13 @@ export default async function handler(req, res) {
   proxy(req, res, null, (err) => {
     if (err) {
       res.status(500).send("Proxy error");
+    } else {
+      res.setHeader("Access-Control-Allow-Origin", "http://localhost:4200");
+      res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
+      res.setHeader(
+        "Access-Control-Allow-Headers",
+        "Content-Type, Authorization"
+      );
     }
   });
 }
