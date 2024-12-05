@@ -7,6 +7,10 @@
     {
       "source": "/ws/(.*)",
       "destination": "https://54.253.2.130/ws/$1"
+    },
+    {
+      "source": "/chat/(.*)",
+      "destination": "https://54.253.2.130/chat/$1"
     }
   ]
 }
