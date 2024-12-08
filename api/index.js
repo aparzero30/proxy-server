@@ -10,10 +10,7 @@ export default async function handler(req, res) {
     if (err) {
       res.status(500).send("Proxy error");
     } else {
-      res.setHeader(
-        "Access-Control-Allow-Origin",
-        "https://spotify-ui-gules.vercel.app/"
-      );
+      res.setHeader("Access-Control-Allow-Origin", "https://localhost:4200");
       res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
       res.setHeader(
         "Access-Control-Allow-Headers",
