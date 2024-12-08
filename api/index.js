@@ -2,7 +2,7 @@ const { createProxyMiddleware } = require("http-proxy-middleware");
 
 export default async function handler(req, res) {
   const proxy = createProxyMiddleware({
-    target: "https://54.253.2.130",
+    target: "https://13.211.92.181",
     changeOrigin: true,
   });
 
